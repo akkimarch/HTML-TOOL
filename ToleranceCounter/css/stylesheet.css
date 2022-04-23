@@ -1,0 +1,87 @@
+}
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+    background-color: #FFF4E1;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/* ************************ */
+/*  ヘッダーとボトム */
+.header {
+    background-color: #E67A7A;
+    height: 90px;
+}
+
+.header-logo {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+}
+
+.header img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bottom {
+    background-color: #E67A7A;
+    /* margin-top: 110px; */
+    height: 90px;
+}
+/*********************************/
+
+.Counter input {
+    width: 50px;
+    height: 30px;
+    margin: 20px 50px 0 0;
+    /*background-color: #26d0c9;*/
+}
+
+.ToolBody {
+    padding: 50px 10px 50px 10px;
+    height: 350px;
+    /*   background-color: antiquewhite; */
+    /*   border:solid 3px #000000;   /*囲み線*/
+    /*   border-radius:10px;     /*角の丸み*/
+}
+
+.ToolBody button {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.CurrentValue {
+    margin-left: 50px;
+}
+
+#INPUT{
+    float:left;
+      border:solid 3px #000000;  
+}
+
+
+#Result{
+    float:right;
+      border:solid 3px #000000;   
+}
+
+
+#End_button {
+    margin-left:100px;
+    width: auto;
+}

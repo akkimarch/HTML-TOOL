@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ShadowVerseTOOL</title>
+    <link rel="stylesheet" href="css\stylesheet.css">
+</head>
+<body>
+    <div class="header">
+        <!--<div class="header-logo">シャドウバース TOOL</div>-->
+        <img src="img\Paradigm.bmp" alt="ﾊﾟﾗﾀﾞｲﾑｼﾌﾄ画像" />
+    </div>
+
+    <div class="タイトルと説明">
+        <h2>●パラダイムシフト コスト計算機</h2>
+        <h2>数字クリックでクリアできます。</h2>
+    </div>
+
+    <div class="ツール本体">
+        <button type="button" value="button" onclick="Add_buttonclick()">
+            カウンタ追加
+        </button>
+
+        <button type="button" value="button" onclick="Down_buttonclick()">
+            コストDOWN (AF 1体破壊)
+        </button>
+
+        <div class="Counter">
+            <input type="number" value="-1" id="count1" readonly="readonly" onclick="Counter_clear(event)" />
+            <input type="number" value="-1" id="count2" readonly="readonly" onclick="Counter_clear(event)" />
+            <input type="number" value="-1" id="count3" readonly="readonly" onclick="Counter_clear(event)" />
+            <input type="number" value="-1" id="count4" readonly="readonly" onclick="Counter_clear(event)" />
+            <br />
+            <input type="number" value="-1" id="count5" readonly="readonly" onclick="Counter_clear(event)" />
+            <input type="number" value="-1" id="count6" readonly="readonly" onclick="Counter_clear(event)" />
+            <input type="number" value="-1" id="count7" readonly="readonly" onclick="Counter_clear(event)" />
+            <input type="number" value="-1" id="count8" readonly="readonly" onclick="Counter_clear(event)" />
+        </div>
+    </div>
+
+    <div class="bottom">
+        <!--いろいろ-->
+    </div>
+
+
+
+    <script src="js\script.js"></script>
+</body>
+</html>
+
+

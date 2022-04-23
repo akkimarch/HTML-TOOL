@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Othello</title>
+    <link rel="stylesheet" href="css\stylesheet.css">
+</head>
+<body>
+    <div class="header">
+        <bold>Othello</bold>
+    </div>
+
+    <main>
+        <div class="board" align="center">
+            <table border="1" >         
+                <tr id="Side_1">
+                    <td id="a1" class="Non" onclick="PutStone(event)"></td>
+                    <td id="b1" class="Non" onclick="PutStone(event)"></td>
+                    <td id="c1" class="Non" onclick="PutStone(event)"></td>
+                    <td id="d1" class="Non" onclick="PutStone(event)"></td>
+                    <td id="e1" class="Non" onclick="PutStone(event)"></td>
+                    <td id="f1" class="Non" onclick="PutStone(event)"></td>
+                    <td id="g1" class="Non" onclick="PutStone(event)"></td>
+                    <td id="h1" class="Non" onclick="PutStone(event)"></td>
+                </tr>
+
+                <tr id="Side_2">
+                    <td id="a2" class="Non" onclick="PutStone(event)"></td>
+                    <td id="b2" class="Non" onclick="PutStone(event)"></td>
+                    <td id="c2" class="Non" onclick="PutStone(event)"></td>
+                    <td id="d2" class="Non" onclick="PutStone(event)"></td>
+                    <td id="e2" class="Non" onclick="PutStone(event)"></td>
+                    <td id="f2" class="Non" onclick="PutStone(event)"></td>
+                    <td id="g2" class="Non" onclick="PutStone(event)"></td>
+                    <td id="h2" class="Non" onclick="PutStone(event)"></td>
+                </tr>
+
+                <tr id="Side_3">
+                    <td id="a3" class="Non" onclick="PutStone(event)"></td>
+                    <td id="b3" class="Non" onclick="PutStone(event)"></td>
+                    <td id="c3" class="Non" onclick="PutStone(event)"></td>
+                    <td id="d3" class="Non" onclick="PutStone(event)"></td>
+                    <td id="e3" class="Non" onclick="PutStone(event)"></td>
+                    <td id="f3" class="Non" onclick="PutStone(event)"></td>
+                    <td id="g3" class="Non" onclick="PutStone(event)"></td>
+                    <td id="h3" class="Non" onclick="PutStone(event)"></td>
+                </tr>
+
+                <tr id="Side_4">
+                    <td id="a4" class="Non" onclick="PutStone(event)"></td>
+                    <td id="b4" class="Non" onclick="PutStone(event)"></td>
+                    <td id="c4" class="Non" onclick="PutStone(event)"></td>
+                    <td id="d4" class="circle_white" onclick="PutStone(event)"></td>
+                    <td id="e4" class="circle_black" onclick="PutStone(event)"></td>
+                    <td id="f4" class="Non" onclick="PutStone(event)"></td>
+                    <td id="g4" class="Non" onclick="PutStone(event)"></td>
+                    <td id="h4" class="Non" onclick="PutStone(event)"></td>
+                </tr>
+
+                <tr id="Side_5">
+                    <td id="a5" class="Non" onclick="PutStone(event)"></td>
+                    <td id="b5" class="Non" onclick="PutStone(event)"></td>
+                    <td id="c5" class="Non" onclick="PutStone(event)"></td>
+                    <td id="d5" class="circle_black" onclick="PutStone(event)"></td>
+                    <td id="e5" class="circle_white" onclick="PutStone(event)"></td>
+                    <td id="f5" class="Non" onclick="PutStone(event)"></td>
+                    <td id="g5" class="Non" onclick="PutStone(event)"></td>
+                    <td id="h5" class="Non" onclick="PutStone(event)"></td>
+                </tr>
+
+                <tr id="Side_6">
+                    <td id="a6" class="Non" onclick="PutStone(event)"></td>
+                    <td id="b6" class="Non" onclick="PutStone(event)"></td>
+                    <td id="c6" class="Non" onclick="PutStone(event)"></td>
+                    <td id="d6" class="Non" onclick="PutStone(event)"></td>
+                    <td id="e6" class="Non" onclick="PutStone(event)"></td>
+                    <td id="f6" class="Non" onclick="PutStone(event)"></td>
+                    <td id="g6" class="Non" onclick="PutStone(event)"></td>
+                    <td id="h6" class="Non" onclick="PutStone(event)"></td>
+                </tr>
+
+                <tr id="Side_7">
+                    <td id="a7" class="Non" onclick="PutStone(event)"></td>
+                    <td id="b7" class="Non" onclick="PutStone(event)"></td>
+                    <td id="c7" class="Non" onclick="PutStone(event)"></td>
+                    <td id="d7" class="Non" onclick="PutStone(event)"></td>
+                    <td id="e7" class="Non" onclick="PutStone(event)"></td>
+                    <td id="f7" class="Non" onclick="PutStone(event)"></td>
+                    <td id="g7" class="Non" onclick="PutStone(event)"></td>
+                    <td id="h7" class="Non" onclick="PutStone(event)"></td>
+                </tr>
+
+                <tr id="Side_8">
+                    <td id="a8" class="Non" onclick="PutStone(event)"></td>
+                    <td id="b8" class="Non" onclick="PutStone(event)"></td>
+                    <td id="c8" class="Non" onclick="PutStone(event)"></td>
+                    <td id="d8" class="Non" onclick="PutStone(event)"></td>
+                    <td id="e8" class="Non" onclick="PutStone(event)"></td>
+                    <td id="f8" class="Non" onclick="PutStone(event)"></td>
+                    <td id="g8" class="Non" onclick="PutStone(event)"></td>
+                    <td id="h8" class="Non" onclick="PutStone(event)"></td>
+                </tr>
+
+
+            </table>
+
+        </div>
+    
+        <div class="info">
+                    <div class="Blank"></div>
+
+                    <div id="ShowTurn" class="circle_black"></div><br/>
+                    <div id="Black_Count">黒の数：2</div><br/>
+                    <div id="White_Count">白の数：2</div>
+
+                    <div class="message">
+                        
+                    </div>
+            
+        </div>
+
+
+
+
+    </main>
+
+    <div class="bottom">
+        <!--いろいろ-->
+    </div>
+
+
+
+    <script src="js\script.js"></script>
+</body>
+</html>
+
+
